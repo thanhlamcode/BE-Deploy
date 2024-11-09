@@ -4,7 +4,7 @@ import multer from "multer";
 import uploadToDrive from "../../middleware/uploadToDrive.js";
 
 // Cấu hình multer để lưu file tạm
-const upload = multer({ dest: "uploads/" }); // Thư mục lưu trữ ảnh tạm
+const upload = multer({ dest: "/tmp" }); // Thư mục tạm thời trong môi trường serverless
 
 const carouselRouter = Router();
 
